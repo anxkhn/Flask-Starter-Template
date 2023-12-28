@@ -1,0 +1,33 @@
+.dark-mode {
+  background-color: #000000;
+  color: #fff;
+}
+
+.navbar {
+  background-color: #f8f9fa;
+  color: #000;
+}
+
+.dark-mode #btbar,
+.dark-mode .form-check-input:checked {
+  color: #fff;
+}
+
+.dark-mode .form-check-label,
+.dark-mode #loginForm,
+.dark-mode #loginForm #username,
+.dark-mode #loginForm #password,
+.dark-mode #loginForm #confirmation {
+  background-color: #202529;
+  color: #fff;
+}
+
+.dark-mode #loginForm #confirmation::placeholder,
+.dark-mode #loginForm #username::placeholder,
+.dark-mode #loginForm #password::placeholder {
+  color: #fff;
+}
+
+.navbar-brand {
+  float: none;
+}

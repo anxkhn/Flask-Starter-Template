@@ -1,0 +1,38 @@
+{% extends "layout.html" %} {% block title %} Log In {% endblock %} {% block
+main %}
+<div class="container p-5">
+  <div class="row">
+    <div class="col-lg-6 mx-auto border rounded-3 w-auto" id="loginForm">
+      <form action="/login" method="post" class="container p-5" id="loginForm">
+        <div class="mb-3">
+          <h1>Login</h1>
+          <br />
+          <br />
+          <input
+            autocomplete="off"
+            autofocus
+            class="form-control mx-auto"
+            id="username"
+            name="username"
+            placeholder="Username"
+            type="text"
+          />
+        </div>
+        <div class="mb-3">
+          <input
+            class="form-control mx-auto"
+            id="password"
+            name="password"
+            placeholder="Password"
+            type="password"
+          />
+        </div>
+        <button class="btn btn-primary" type="submit">Log In</button>
+      </form>
+    </div>
+    <div class="mt-3 text-center">
+      <p>Don't have an account? <a href="/register">Register Now</a></p>
+    </div>
+  </div>
+</div>
+{% endblock %}
